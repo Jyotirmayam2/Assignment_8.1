@@ -11,12 +11,14 @@
 <body>
     <script>
         function isPrime(n) {
+            //if.. else if.. ladder
             if (n === 1) {
                 return false;
             }
             else if (n === 2) {
                 return true;
             } else {
+                //for loop
                 for (var x = 2; x < n; x++) {
                     if (n % x === 0) {
                         return false;
@@ -25,7 +27,7 @@
                 return true;
             }
         }
-
+        //function call inside console.log, hence it'll call the js function and print the result in the browser console
         console.log(isPrime(79));
         console.log(isPrime(72));
     </script>
